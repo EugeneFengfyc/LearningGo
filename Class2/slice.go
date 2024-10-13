@@ -35,4 +35,19 @@ func main() {
 		其中 a 和 b 均是预分配 2 个元素的切片，只是 b 的内部存储空间已经分配了 10 个，但实际使用了 2 个元素。
 		容量不会影响当前的元素个数，因此 a 和 b 取 len 都是 2。
 	*/
+
+	// 声明字符串切片
+	var strList []string
+	// 声明整型切片
+	var numList []int
+	// 声明一个空切片
+	var numListEmpty = []int{}
+	// 输出3个切片
+	fmt.Println(strList, numList, numListEmpty)
+	// 输出3个切片大小
+	fmt.Println(len(strList), len(numList), len(numListEmpty))
+	// 切片判定空的结果
+	fmt.Println(strList == nil)
+	fmt.Println(numList == nil)
+	fmt.Println(numListEmpty == nil)
 }
